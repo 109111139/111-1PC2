@@ -22,7 +22,7 @@
 protected void Page_Load(object sender, EventArgs e)
         {
             int i_In = 66377;
-            double d_Ou = -999;
+            double d_Ou = 0;
             double C = (double)i_In;
             d_Ou = (C*9/5)+ 32;
             Response.Write(d_Ou);
