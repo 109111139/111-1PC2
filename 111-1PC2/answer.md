@@ -23,9 +23,15 @@
 下段程式碼則為使用後結果：
 
 ```csharp
-public void mt_getResult(){
-    ...
-}
+protected void Page_Load(object sender, EventArgs e)
+        {
+            int i_In = 66377;
+            double d_Ou = -999;
+            double C = (double)i_In;
+            d_Ou = (C*9/5)+ 32;
+            Response.Write(d_Ou);
+                
+        }
 ```
 
 若要於內文中標示部分.aspx檔，則使用以下標籤` ```html 程式碼 ``` `，
